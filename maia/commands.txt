@@ -1,0 +1,7 @@
+python tools/infer.py ./data/test ./20220413_HerdNet_General_dataset_2022.pth
+
+python tools/test.py test=herdnet_custom.yml (yml must be within configs/test in order to work)
+
+rm -rf configs/test/herdnet_custom.yml
+
+nano configs/test/herdnet_custom.yml
