@@ -34,7 +34,7 @@ losses:
     lambda_const: 1.0
     kwargs:
       reduction: 'mean'
-      weight: [0.1,5.,15.,1.]
+      weight: [0.1, 1.2, 1.9, 1.16, 6.37, 12.12, 1.0]
 
 datasets:
   img_size: [512,512]
@@ -52,8 +52,8 @@ datasets:
   
   train:
     name: 'CSVDataset'
-    csv_file: '/home/estudiante/HerdNet/data/train_custom.csv'
-    root_dir: '/home/estudiante/HerdNet/data/train/'
+    csv_file: '/home/estudiante/HerdNet/data/train_patches_custom.csv'
+    root_dir: '/home/estudiante/HerdNet/data/train_patches/'
     
     sampler: null
 
@@ -78,8 +78,8 @@ datasets:
 
   validate:
     name: 'CSVDataset'
-    csv_file: '/home/estudiante/HerdNet/data/val_custom.csv'
-    root_dir: '/home/estudiante/HerdNet/data/val/'
+    csv_file: '/home/estudiante/HerdNet/data/val_patches/gt.csv'
+    root_dir: '/home/estudiante/HerdNet/data/val_patches/'
 
     albu_transforms:
       Normalize:

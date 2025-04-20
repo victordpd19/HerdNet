@@ -12,6 +12,7 @@ handling/
 tests/
 scripts/
 *.code-workspace
+.venv/
 
 configs/train/*
 configs/test/*

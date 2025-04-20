@@ -59,6 +59,7 @@ class BasicBlock(nn.Module):
         if residual is None:
             residual = x
 
+        print("dla_x_shape",x.shape)
         out = self.conv1(x)
         out = self.bn1(out)
         out = self.relu(out)
