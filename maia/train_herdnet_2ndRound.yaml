@@ -7,8 +7,8 @@ device_name: 'cuda'
 model: 
   name: 'HerdNet'
   from_torchvision: False
-  load_from: null
-  resume_from: '/home/estudiante/HerdNet/outputs/2025-04-21/01-18-25/best_model.pth'
+  load_from: '/home/estudiante/HerdNet/outputs/2025-04-21/01-18-25/best_model.pth'
+  resume_from: null
   kwargs:
     num_layers: 34
     pretrained: True
@@ -53,7 +53,7 @@ datasets:
   train:
     name: 'FolderDataset'
     csv_file: '/home/estudiante/HerdNet/data/train_patches_custom.csv'
-    root_dir: '/home/estudiante/HerdNet/data/train/20250426_HerdNet_results/thumbnails/'
+    root_dir: '/home/estudiante/HerdNet/data/train_fullset_patches'
     
     sampler: null
 

@@ -5,3 +5,5 @@ python tools/test.py test=herdnet_custom.yml (yml must be within configs/test in
 rm -rf configs/test/herdnet_custom.yml
 
 nano configs/test/herdnet_custom.yml
+
+python tools/train.py train=train_herdnet_2ndRound.yaml
